@@ -1,11 +1,11 @@
 import express from 'express';
 import mongoose from "mongoose";
-import taskCompletionRouter from './routes/TaskCompletion';
-import taskRouter from './routes/Task';
+import taskCompletionRouter from './Routes/TaskCompletion';
+import taskRouter from './Routes/Task';
 
 require('dotenv').config();
-require('./routes/Task');
-require('./routes/TaskCompletion');
+require('./Routes/Task');
+require('./Routes/TaskCompletion');
 
 const port = process.env.EXPRESS_PORT;
 const app = express();
